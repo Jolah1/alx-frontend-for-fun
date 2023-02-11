@@ -17,7 +17,7 @@ if __name__ == "__main__":
 
     if not path.exists(sys.argv[1]) or not str(sys.argv[1]).endswith(".md"):
         sys.stderr.write("Missing " + sys.argv[1] + '\n')
-        exit(0)
+        exit(1)
 
     def handleHeadings(pattern):
         tag = markD[lineSplit[0]]
